@@ -1,0 +1,563 @@
+/*Website body*/
+body {
+  font-family: 'Varela Round', sans-serif;
+  margin: 10px;
+  color: #2D2E27;
+}
+a {
+  color: #4154f1;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #717ff5;
+  text-decoration: none;
+}
+/*# Header
+--------------------------------------------------------------*/
+.header {
+  transition: all 0.5s;
+  z-index: 997;
+  padding: 20px 0;
+}
+
+.header.header-scrolled {
+  background: #fff;
+  padding: 15px 0;
+  box-shadow: 0px 2px 20px rgba(1, 41, 112, 0.1);
+}
+
+.header .logo {
+  line-height: 0;
+}
+
+.header .logo img {
+  max-height: 40px;
+  margin-right: 6px;
+}
+
+.header .logo span {
+  font-size: 30px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  color: #012970;
+  font-family: "Nunito", sans-serif;
+  margin-top: 3px;
+}
+/*Navbar*/
+.navbar {
+  padding: 0;
+}
+
+.navbar ul {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  list-style: none;
+  align-items: center;
+}
+
+.navbar li {
+  position: relative;
+}
+
+.navbar a, .navbar a:focus {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 0 10px 30px;
+  font-family: "Nunito", sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  color: #013289;
+  white-space: nowrap;
+  transition: 0.3s;
+}
+
+.navbar a i, .navbar a:focus i {
+  font-size: 12px;
+  line-height: 0;
+  margin-left: 5px;
+}
+
+.navbar a:hover, .navbar .active, .navbar .active:focus, .navbar li:hover > a {
+  color: #4154f1;
+}
+
+.navbar .getstarted {
+  background: #4154f1;
+  padding: 8px 20px;
+  margin-left: 30px;
+  border-radius: 4px;
+  color: #fff;
+}
+
+.navbar .getstarted:hover {
+  color: #fff;
+  background: #5969f3;
+}
+
+.navbar .dropdown ul {
+  display: block;
+  position: absolute;
+  left: 14px;
+  top: calc(100% + 30px);
+  margin: 0;
+  padding: 10px 0;
+  z-index: 99;
+  opacity: 0;
+  visibility: hidden;
+  background: #fff;
+  box-shadow: 0px 0px 30px rgba(127, 137, 161, 0.25);
+  transition: 0.3s;
+  border-radius: 4px;
+}
+
+.navbar .dropdown ul li {
+  min-width: 200px;
+}
+
+.navbar .dropdown ul a {
+  padding: 10px 20px;
+  font-size: 15px;
+  text-transform: none;
+  font-weight: 600;
+}
+
+.navbar .dropdown ul a i {
+  font-size: 12px;
+}
+
+.navbar .dropdown ul a:hover, .navbar .dropdown ul .active:hover, .navbar .dropdown ul li:hover > a {
+  color: #4154f1;
+}
+
+.navbar .dropdown:hover > ul {
+  opacity: 1;
+  top: 100%;
+  visibility: visible;
+}
+
+.navbar .dropdown .dropdown ul {
+  top: 0;
+  left: calc(100% - 30px);
+  visibility: hidden;
+}
+
+.navbar .dropdown .dropdown:hover > ul {
+  opacity: 1;
+  top: 0;
+  left: 100%;
+  visibility: visible;
+}
+
+@media (max-width: 1366px) {
+  .navbar .dropdown .dropdown ul {
+    left: -90%;
+  }
+  .navbar .dropdown .dropdown:hover > ul {
+    left: -100%;
+  }
+}
+
+/*
+
+.footer {
+  height: 150px;
+  background-color: #6d24cc;
+  align-content: center;
+  display: grid;
+  grid-gap: 80px;
+  grid-template-columns: auto auto auto auto;
+  justify-content: center;
+
+}
+
+.footer-icon img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%
+}
+
+Footer styling*/
+/*Simulations styling*/
+
+.simul-heading {
+  padding-left: 6%;
+}
+
+/*Simulation description styling*/
+.simul-container {
+  margin-left: 10%;
+  margin-right: 10%;
+
+}
+
+.simul-card {
+  height: auto;
+  background-color: #e3f6f6;
+  width: auto;
+  border-radius: 20px;
+  display: grid;
+  grid-gap: 0px;
+  grid-template-columns: 250px auto;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 30px;
+}
+
+.simul-pic img {
+  width: 200px;
+  height: 200px;
+  padding: 20px;
+  border-radius: 30px;
+  object-fit: cover;
+}
+
+.simul-info {
+  padding-top: 30px;
+}
+
+.simul-info a {
+  padding: 10px 15px;
+  background-color: #2D2E27;
+  color: white;
+  font-size: 15px;
+  border-radius: 12px;
+  text-decoration: none;
+}
+
+.simul-info a:hover {
+  box-shadow: 0px 3px 5px #cccccc;
+  background-color: #6d24cc;
+}
+
+/*Qr Code Page styling for full 3d simulations*/
+.qr-code-page-container{
+  margin-top: 30px;
+  margin-bottom: 70px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.link-container  {
+  width: 500px;
+  padding: 7px;
+  background-color: #cccccc;
+  border: 1px solid #cccccc;
+  border-radius: 30px;
+  text-align: center;
+}
+
+/*Styling for Skeletal System Info page*/
+
+.full-qr-skeletal{
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.skeletal-container {
+  width: 100%;
+  display: grid;
+  grid-gap: 0px;
+  grid-template-columns: auto auto;
+  justify-content: center;
+  margin-top: 50px;
+}
+
+.full-skeletal {
+  height: 685px;
+  width: 500px;
+  background-image: url("QrCodes/Pictures/skeletal.jpg");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+
+/*Styling for skeletal system body parts, positioning do icons*/
+.full-skeletal i {
+  font-size: 13px;
+}
+
+.full-skeletal i:hover {
+  color: #6d24cc;
+}
+
+#skull {
+  margin: 30px 0px 0px 260px;
+}
+
+#clavicle {
+  margin: 76px 0px 0px 280px;
+}
+
+#scapula {
+  margin: 0px 0px 0px 290px;
+}
+
+#sternum {
+  margin: 10px 0px 0px 245px;
+}
+
+#ribs {
+  margin: 10px 0px 0px 210px;
+}
+
+#humerus {
+  margin: 5px 0px 0px 308px;
+}
+
+#vertebrae {
+  margin: 5px 0px 0px 243px;
+}
+
+#coxal-bone {
+  margin: 35px 0px 0px 205px;
+}
+
+#ulna {
+  margin: 0px 0px 0px 315px;
+}
+
+#radius {
+  margin: 0px 0px 0px 330px;
+}
+
+#phalanges-fingers {
+  margin: 45px 0px 0px 155px;
+}
+
+#femur {
+  margin: 6px 0px 0px 278px;
+}
+
+#patella {
+  margin: 30px 0px 0px 213px;
+}
+
+#tibia {
+  margin: 30px 0px 0px 270px;
+}
+
+#fibula {
+  margin: 20px 0px 0px 283px;
+}
+
+#toes {
+  margin: 80px 0px 0px 213px;
+}
+
+/*Styling for skeletal system descriptions and additional information for 3d models*/
+.description {
+  height: auto;
+  width: 450px;
+  background-color: #a6e0e0;
+  border: 1px solid #F6F2E3;
+  border-radius: 20px;
+  padding: 50px;
+  margin-bottom: 60px;
+  box-shadow: 0px 3px 5px #cccccc;
+}
+
+.description-content img{
+  height: 230px;
+  width: 230px;
+  border-radius: 30px;
+}
+
+button {
+	margin-top: 5px;
+	border-radius: 20px;
+	padding: 10px;
+	background-color: #0C6291;
+	color: #FBFEF9;
+	display: block;
+	margin: 0 auto;
+	font-size: 15px;
+}
+button a:visited {
+  color: #FBFEF9;
+}
+#button-text {
+	text-align: center;
+}
+
+/*--------------------------------------------------------------
+# Footer
+--------------------------------------------------------------*/
+.footer {
+  background: #f6f9ff;
+  padding: 0 0 30px 0;
+  font-size: 14px;
+}
+
+.footer .footer-newsletter {
+  padding: 50px 0;
+  background: #f6f9ff;
+  border-top: 1px solid #e1ecff;
+}
+
+.footer .footer-newsletter h4 {
+  font-size: 24px;
+  margin: 0 0 10px 0;
+  padding: 0;
+  line-height: 1;
+  font-weight: 700;
+  color: #012970;
+}
+
+.footer .footer-newsletter form {
+  margin-top: 20px;
+  background: #fff;
+  padding: 6px 10px;
+  position: relative;
+  border-radius: 4px;
+  border: 1px solid #e1ecff;
+}
+
+.footer .footer-newsletter form input[type="email"] {
+  border: 0;
+  padding: 8px;
+  width: calc(100% - 140px);
+}
+
+.footer .footer-newsletter form input[type="submit"] {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  border: 0;
+  background: none;
+  font-size: 16px;
+  padding: 0 30px;
+  margin: 3px;
+  background: #4154f1;
+  color: #fff;
+  transition: 0.3s;
+  border-radius: 4px;
+}
+
+.footer .footer-newsletter form input[type="submit"]:hover {
+  background: #5969f3;
+}
+
+.footer .footer-top {
+  background: white url(../img/footer-bg.png) no-repeat right top;
+  background-size: contain;
+  border-top: 1px solid #e1ecff;
+  border-bottom: 1px solid #e1ecff;
+  padding: 60px 0 30px 0;
+}
+
+@media (max-width: 992px) {
+  .footer .footer-top {
+    background-position: center bottom;
+  }
+}
+
+.footer .footer-top .footer-info {
+  margin-bottom: 30px;
+}
+
+.footer .footer-top .footer-info .logo {
+  line-height: 0;
+  margin-bottom: 15px;
+}
+
+.footer .footer-top .footer-info .logo img {
+  max-height: 40px;
+  margin-right: 6px;
+}
+
+.footer .footer-top .footer-info .logo span {
+  font-size: 30px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  color: #012970;
+  font-family: "Nunito", sans-serif;
+  margin-top: 3px;
+}
+
+.footer .footer-top .footer-info p {
+  font-size: 14px;
+  line-height: 24px;
+  margin-bottom: 0;
+  font-family: "Nunito", sans-serif;
+}
+
+.footer .footer-top .social-links a {
+  font-size: 20px;
+  display: inline-block;
+  color: rgba(1, 41, 112, 0.5);
+  line-height: 0;
+  margin-right: 10px;
+  transition: 0.3s;
+}
+
+.footer .footer-top .social-links a:hover {
+  color: #012970;
+}
+
+.footer .footer-top h4 {
+  font-size: 16px;
+  font-weight: bold;
+  color: #012970;
+  text-transform: uppercase;
+  position: relative;
+  padding-bottom: 12px;
+}
+
+.footer .footer-top .footer-links {
+  margin-bottom: 30px;
+}
+
+.footer .footer-top .footer-links ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer .footer-top .footer-links ul i {
+  padding-right: 2px;
+  color: #d0d4fc;
+  font-size: 12px;
+  line-height: 0;
+}
+
+.footer .footer-top .footer-links ul li {
+  padding: 10px 0;
+  display: flex;
+  align-items: center;
+}
+
+.footer .footer-top .footer-links ul li:first-child {
+  padding-top: 0;
+}
+
+.footer .footer-top .footer-links ul a {
+  color: #013289;
+  transition: 0.3s;
+  display: inline-block;
+  line-height: 1;
+}
+
+.footer .footer-top .footer-links ul a:hover {
+  color: #4154f1;
+}
+
+.footer .footer-top .footer-contact p {
+  line-height: 26px;
+}
+
+.footer .copyright {
+  text-align: center;
+  padding-top: 30px;
+  color: #012970;
+}
+
+.footer .credits {
+  padding-top: 10px;
+  text-align: center;
+  font-size: 13px;
+  color: #012970;
+}

@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Skeletal</title>
+    <link href="style.css" rel="stylesheet" type="text/css"/>
+    <!--Google fonts stylesheets-->
+    <link rel="stylesheet"
+          href="https://fonts.googleapis.com/css?family=Poppins">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Varela+Round&display=swap" rel="stylesheet">
+    <!--Font Awesome icons source-->
+    <script src="https://kit.fontawesome.com/138518a1c2.js" crossorigin="anonymous"></script>
+  </head>
+  <body>
+    
+
+
+    <!--Website navigation bar-->
+    <header id="header" class="header fixed-top">
+    <div class="container-fluid container-xl d-flex align-items-center justify-content-between">
+
+      <a href=".html" class="logo d-flex align-items-center">
+        <img src="img/logo.png" alt="">
+        <span>EDU.AR</span>
+      </a>
+     
+    <nav id="navbar" class="navbar">
+        <ul>
+          <li><a class="nav-link scrollto active" href="index.html">Home</a></li>
+          
+          <li><a class="nav-link scrollto" href="chemistry.html">Chemistry</a></li>
+       
+          
+          <li><a class="getstarted scrollto" href="biology.html">Biology</a></li>
+        </ul>
+        <i class="bi bi-list mobile-nav-toggle"></i>
+      </nav>
+	</div>
+  </header>
+    <br>
+    <br>
+
+    <!--Skeletal system diagram general description-->
+    <h1 class="simul-heading">The Skeletal System</h1>
+    <p class="simul-heading">Hover your mouse over the parts of the diagram to learn more!</p>
+    <br>
+
+    <!--This portion contains image of skeletal system diagram-->
+    <div class = "skeletal-container">
+      <div class = "full-skeletal">
+        <!--Each circular icon points to a specific body part, and will show a more detailed description and a link to the 3d model upon hovering-->
+        <i class="fas fa-circle" id ="skull"></i>
+        <br>
+        <i class="fas fa-circle" id ="clavicle"></i>
+        <br>
+        <i class="fas fa-circle" id ="scapula"></i>
+        <br>
+        <i class="fas fa-circle" id ="sternum"></i>
+        <br>
+        <i class="fas fa-circle" id ="ribs"></i>
+        <br>
+        <i class="fas fa-circle" id ="humerus"></i>
+        <br>
+        <i class="fas fa-circle" id ="vertebrae"></i>
+        <br>
+        <i class="fas fa-circle" id ="coxal-bone"></i>
+        <br>
+        <i class="fas fa-circle" id ="ulna"></i>
+        <br>
+        <i class="fas fa-circle" id ="radius"></i>
+        <br>
+        <i class="fas fa-circle" id ="phalanges-fingers"></i>
+        <br>
+        <i class="fas fa-circle" id ="femur"></i>
+        <br>
+        <i class="fas fa-circle" id ="patella"></i>
+        <br>
+        <i class="fas fa-circle" id ="tibia"></i>
+        <br>
+        <i class="fas fa-circle" id ="fibula"></i>
+        <br>
+        <i class="fas fa-circle" id ="toes"></i>
+        <br>
+        
+      </div>
+
+      <!--Contains description, QR code, and alternative link for viewing 3d model of specific body part-->
+      <div class = "description">
+        <div class = "description-content">
+        <h1 id="body-part">Skull</h1> 
+        <p id="details"> Composed of the cranium and mandible (jawline); protects the brain and gives shape to the face. </p>
+        <div class = "qr-code-container">
+        <br>
+        <h5> Scan this QR code to view the 3D model: </h5>
+        <img id ="pic-qr" src = "QrCodes/skull.png"/>
+        </div>
+        <br>
+        <h5>OR open this link in your browser: </h5>
+        <h5><a href=""  id="alt-link">https://go.echoar.xyz/FWLX</a></h5>
+        </div>
+      </div>
+      
+    </div>
+
+    <!-- ======= Footer ======= -->
+  <footer id="footer" class="footer">
+
+    <div class="footer-top">
+      <div class="container">
+        <div class="row gy-4">
+          <div class="col-lg-5 col-md-12 footer-info">
+            <a href="index.html" class="logo d-flex align-items-center">
+              <img src="img/logo.png" alt="">
+              <span>EDU.AR</span>
+            </a>
+            <p>Edu.Ar is a learning platform that uses Ai learning and 3D models to teach hard concepts such as Chemistry and Biology. With the help of our website students can have easy access to simulations and information to succeed in their classes and homework..</p>
+            <div class="social-links mt-3">
+              <a href="#" class="twitter"><i class="bi bi-twitter"></i></a>
+              <a href="#" class="facebook"><i class="bi bi-facebook"></i></a>
+              <a href="#" class="instagram"><i class="bi bi-instagram bx bxl-instagram"></i></a>
+              <a href="#" class="linkedin"><i class="bi bi-linkedin bx bxl-linkedin"></i></a>
+            </div>
+          </div>
+
+
+          <div class="col-lg-2 col-6 footer-links">
+            <h4>Our Courses</h4>
+            <ul>
+              <li><i class="bi bi-chevron-right"></i> <a href="biology.html">Biology</a></li>
+              <li><i class="bi bi-chevron-right"></i> <a href="chemistry.html">Chemistry</a></li>
+              
+            </ul>
+          </div>
+
+         
+
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="copyright">
+        &copy; Copyright <strong><span>EDU.AR</span></strong>. All Rights Reserved
+      </div>
+      <div class="credits">
+        Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
+      </div>
+    </div>
+  </footer><!-- End Footer -->
+
+  <!--Javascript for managing skeletal system info-->
+  <script>
+
+    /*Each portion checks if a body part is hovered on, then changes the description, QR code, and alternatively link accordingly*/
+
+    /*Javascript for skull information*/
+      document.getElementById("skull").addEventListener("mouseover", function() {
+          document.getElementById("body-part").innerHTML = "Skull";
+          document.getElementById("details").innerHTML = "Composed of the cranium and mandible (jawline); protects the brain and gives shape to the face.";
+          document.getElementById("pic-qr").src = "QrCodes/skull.png";
+          document.getElementById("alt-link").innerHTML = "https://go.echoar.xyz/FWLX";
+          document.getElementById("alt-link").href = "https://go.echoar.xyz/FWLX";
+      });
+
+      /*Javascript for clavicle information*/
+      document.getElementById("clavicle").addEventListener("mouseover", function() {
+          document.getElementById("body-part").innerHTML = "Clavicle";
+          document.getElementById("details").innerHTML = "Also known as the collarbone. Connects the arm to the rest of the skeleton.";
+          document.getElementById("pic-qr").src = "QrCodes/clavicle.png";
+          document.getElementById("alt-link").innerHTML = "https://go.echoar.xyz/UUnS";
+          document.getElementById("alt-link").href = "https://go.echoar.xyz/UUnS";
+      });
+
+      /*Next portions show Javascript for information of the remaining body parts*/
+      document.getElementById("scapula").addEventListener("mouseover", function() {
+          document.getElementById("body-part").innerHTML = "Scapula";
+          document.getElementById("details").innerHTML = "Also known as the shoulder blade. Stabilizes the arm and the neck.";
+          document.getElementById("pic-qr").src = "QrCodes/scapula.png";
+          document.getElementById("alt-link").innerHTML = "https://go.echoar.xyz/68r4";
+          document.getElementById("alt-link").href = "https://go.echoar.xyz/68r4";
+      });
+
+      document.getElementById("sternum").addEventListener("mouseover", function() {
+          document.getElementById("body-part").innerHTML = "Sternum";
+          document.getElementById("details").innerHTML = "Protects the chest organs alongside the ribcage.";
+          document.getElementById("pic-qr").src = "QrCodes/sternum.png";
+          document.getElementById("alt-link").innerHTML = "https://go.echoar.xyz/9gS4";
+          document.getElementById("alt-link").href = "https://go.echoar.xyz/9gS4";
+      });
+
+      document.getElementById("ribs").addEventListener("mouseover", function() {
+          document.getElementById("body-part").innerHTML = "Ribs";
+          document.getElementById("details").innerHTML = "Surrounds and protects the heart and lungs.";
+          document.getElementById("pic-qr").src = "QrCodes/ribs.png";
+          document.getElementById("alt-link").innerHTML = "https://go.echoar.xyz/zKuK";
+          document.getElementById("alt-link").href = "https://go.echoar.xyz/zKuK";
+      });
+
+      document.getElementById("humerus").addEventListener("mouseover", function() {
+          document.getElementById("body-part").innerHTML = "Humerus";
+          document.getElementById("details").innerHTML = "Provides structure and support to the upper arm.";
+          document.getElementById("pic-qr").src = "QrCodes/humerus.png";
+          document.getElementById("alt-link").innerHTML = "https://go.echoar.xyz/vUUV";
+          document.getElementById("alt-link").href = "https://go.echoar.xyz/vUUV";
+      });
+
+      document.getElementById("vertebrae").addEventListener("mouseover", function() {
+          document.getElementById("body-part").innerHTML = "Vertebrae";
+          document.getElementById("details").innerHTML = "Protects the spinal cord; provides structural support and mobility.";
+          document.getElementById("pic-qr").src = "QrCodes/vertebrae.png";
+          document.getElementById("alt-link").innerHTML = "https://go.echoar.xyz/S5kV";
+          document.getElementById("alt-link").href = "https://go.echoar.xyz/S5kV";
+      });
+
+      document.getElementById("coxal-bone").addEventListener("mouseover", function() {
+          document.getElementById("body-part").innerHTML = "Coxal Bone";
+          document.getElementById("details").innerHTML = "Protects the pelvic organs.";
+          document.getElementById("pic-qr").src = "QrCodes/coxalbone.png";
+          document.getElementById("alt-link").innerHTML = "https://go.echoar.xyz/AiuY";
+          document.getElementById("alt-link").href = "https://go.echoar.xyz/AiuY";
+      });
+
+      document.getElementById("ulna").addEventListener("mouseover", function() {
+          document.getElementById("body-part").innerHTML = "Ulna";
+          document.getElementById("details").innerHTML = "The ulna and the radius pivot around one another to allow rotation of the wrist.";
+          document.getElementById("pic-qr").src = "QrCodes/ulna.png";
+          document.getElementById("alt-link").innerHTML = "https://go.echoar.xyz/YZPj";
+          document.getElementById("alt-link").href = "https://go.echoar.xyz/YZPj";
+      });
+
+      document.getElementById("radius").addEventListener("mouseover", function() {
+          document.getElementById("body-part").innerHTML = "Radius";
+          document.getElementById("details").innerHTML = "The radius and ulna pivot around one another to allow rotation of the wrist.";
+          document.getElementById("pic-qr").src = "QrCodes/radius.png";
+          document.getElementById("alt-link").innerHTML = "https://go.echoar.xyz/Rjvx";
+          document.getElementById("alt-link").href = "https://go.echoar.xyz/Rjvx";
+      });
+
+      document.getElementById("phalanges-fingers").addEventListener("mouseover", function() {
+          document.getElementById("body-part").innerHTML = "Hand Bones";
+          document.getElementById("details").innerHTML = "Composed of the Carpals (allows the wrist to move and rotate), Metacarpals (connects the Carpals to the Phalanges), and Phalanges (Responsible for the dexterity of our hands).";
+          document.getElementById("pic-qr").src = "QrCodes/phalanges-fingers.png";
+          document.getElementById("alt-link").innerHTML = "https://go.echoar.xyz/HSRT";
+          document.getElementById("alt-link").href = "https://go.echoar.xyz/HSRT";
+      });
+
+      document.getElementById("femur").addEventListener("mouseover", function() {
+          document.getElementById("body-part").innerHTML = "Femur";
+          document.getElementById("details").innerHTML = "The largest bone in the body; it bears the body weight and provides leverage for the leg.";
+          document.getElementById("pic-qr").src = "QrCodes/femur.png";
+          document.getElementById("alt-link").innerHTML = "https://go.echoar.xyz/z9Uk";
+          document.getElementById("alt-link").href = "https://go.echoar.xyz/z9Uk";
+      });
+
+      document.getElementById("patella").addEventListener("mouseover", function() {
+          document.getElementById("body-part").innerHTML = "Patella";
+          document.getElementById("details").innerHTML = "Also known as the knee cap.";
+          document.getElementById("pic-qr").src = "QrCodes/patella.png";
+          document.getElementById("alt-link").innerHTML = "https://go.echoar.xyz/t4ga";
+          document.getElementById("alt-link").href = "https://go.echoar.xyz/t4ga";
+      });
+
+      document.getElementById("tibia").addEventListener("mouseover", function() {
+          document.getElementById("body-part").innerHTML = "Tibia";
+          document.getElementById("details").innerHTML = "A weight-bearing bone.";
+          document.getElementById("pic-qr").src = "QrCodes/tibia.png";
+          document.getElementById("alt-link").innerHTML = "https://go.echoar.xyz/nsrg";
+          document.getElementById("alt-link").href = "https://go.echoar.xyz/nsrg";
+      });
+
+      document.getElementById("fibula").addEventListener("mouseover", function() {
+          document.getElementById("body-part").innerHTML = "Fibula";
+          document.getElementById("details").href = "Supports the tibia and stabilizes the ankle.";
+          document.getElementById("pic-qr").src = "QrCodes/fibula.png";
+          document.getElementById("alt-link").innerHTML = "https://go.echoar.xyz/KZsf";
+          document.getElementById("alt-link").href = "https://go.echoar.xyz/KZsf";
+      });
+
+      document.getElementById("toes").addEventListener("mouseover", function() {
+          document.getElementById("body-part").innerHTML = "Foot Bones";
+          document.getElementById("details").innerHTML = "Composed of the Tarsals (Help the foot support the weight of the body), Metatarsals (Provide movement in the foot), and Phalanges (Allow the toes to bend properly).";
+          document.getElementById("pic-qr").src = "QrCodes/toes.png";
+          document.getElementById("alt-link").innerHTML = "https://go.echoar.xyz/bjSm";
+          document.getElementById("alt-link").href = "https://go.echoar.xyz/bjSm";
+      });
+
+
+  </script>
+
+  </body>
+</html>
